@@ -1,7 +1,7 @@
 # 4G-Network
 صفحة هتسبوت (شبكة فورجي اللاسلكية) |Hotspot Pages -mikrotik
 
-
+![GitHub Logo](https://github.com/aljawfi/4G-Network/blob/master/img/logo.png)
 مميزات الصفحة
 
 
@@ -20,8 +20,8 @@
 
 امكانية التسجيل بكرت اخر او تبديل الحساب المستخدم .
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+ 
 
-![GitHub Logo](https://github.com/aljawfi/4G-Network/blob/master/img/logo.png)
-Format: ![Alt Text](url)
+
+ 
 
