@@ -22,6 +22,6 @@
 
 ![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
 
-![GitHub Logo](/images/logo.png)
+![GitHub Logo](https://github.com/aljawfi/4G-Network/blob/master/img/logo.png)
 Format: ![Alt Text](url)
 
