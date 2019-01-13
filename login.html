@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html dir=rtl>
+<meta http-equiv=content-type content="text/html;charset=utf-8" />
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<title>تسجيل الدخول</title>
+<meta name=viewport content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel=stylesheet href=css/NotoKufiArabic/Font_ar.css rel=stylesheet type="text/css"/>
+<link rel=stylesheet href=css/bootstrap/css/bootstrap.min.css>
+<link rel=stylesheet href=css/bootstrap-rtl/bootstrap-rtl.css>
+<link rel=stylesheet href=css/font-awesome/css/font-awesome.min.css>
+<link rel=stylesheet href=css/owl.carousel/assets/owl.carousel.min.css>
+<link rel=stylesheet href=css/rtl-theme.css>
+<link rel=stylesheet href=css/rtl-theme-elements.css>
+<link rel=stylesheet href=css/bootstrap/css/bootstrap.min.css>
+<link rel=stylesheet href=css/skins/default.css>
+$(if chap-id)
+<script>function setCookie(f,c,a){var b=new Date();b.setTime(b.getTime()+(a*10*1000));var e="expires="+b.toGMTString();document.cookie=f+"="+c+";"+e+";path=/"}function getCookie(a){var g=a+"=";var d=decodeURIComponent(document.cookie);var f=d.split(";");for(var b=0;b<f.length;b++){var e=f[b];while(e.charAt(0)==" "){e=e.substring(1)}if(e.indexOf(g)==0){return e.substring(g.length,e.length)}}return""}function checkCookie(){var a=getCookie("username");if(a>=5){window.location="block.html"}else{var b;b=Number(a);setCookie("username",b+1,30)}}</script>
+<script type=text/javascript src=/md5.js></script>
+<script type=text/javascript language=javascript>function rem(){var e=document.getElementById("uname").value;var c=document.getElementById("remember").checked;if(c==true){var b=new Date();b.setTime(b.getTime()+(5*1000));var d=b.toGMTString();b.setTime(b.getTime()+(259200*1000));var a=b.toGMTString();document.cookie="uname="+e+";expires="+a+"";document.cookie="error=1;expires="+d+""}else{return}}function getCookie2(){var c=new Date();c.setTime(c.getTime()+(5*1000));var b=c.toGMTString();var a=document.cookie.split(";");for(i=0;i<a.length;i++){name_value=a[i];str=name_value.substring(0,6);if(str.indexOf("uname")!==-1){uname=name_value.split("=");uname=uname[1]}if(str.indexOf("error")!==-1){return}}if(uname!=""){document.cookie="error=1;expires="+b+"";window.location.href="login?username="+uname+""}}getCookie2();</script>
+<script type=text/javascript>function doLogin(){var a=document.login.username.value.trim().toLowerCase(),b=document.sendin.password.value.trim().toLowerCase();document.sendin.username.value=a;document.sendin.password.value=hexMD5("$(chap-id)"+a+"$(chap-challenge)");document.sendin.submit();return false}</script>
+</head>
+<body onload=checkCookie()>
+<div class=body>
+<header id=header class=header-no-border-bottom data-plugin-options='{"stickyEnabled": false, "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 148, "stickySetTop": "-148px", "stickyChangeLogo": false}'>
+<div class=header-body>
+<div class="header-container container">
+<div class=row>
+<div class="col-md-2 col-xs-0 col-sm-2">
+</div>
+<div class="col-md-8 col-xs-12 col-sm-8">
+<div class=center>
+<div class="header-logo c">
+<a href=login.html>
+<img height=104 data-sticky-width=40 data-sticky-height=40 data-sticky-top=45 src=img/logo.png>
+</a>
+</div>
+</div>
+</div>
+<div class="col-md-2 col-xs-0 col-sm-2">
+</div>
+</div>
+</div>
+<div class="header-container header-nav header-nav-bar header-nav-bar-primary">
+<div class=container>
+<button class="btn header-btn-collapse-nav" data-toggle=collapse data-target=.header-nav-main>
+<i class="fa fa-bars"></i>
+</button>
+<div class="header-nav-main header-nav-main-light header-nav-main-effect-1 header-nav-main-sub-effect-1 collapse">
+<nav>
+<ul class="nav nav-pills" id=mainNav2>
+<li class>
+<a class href=login.html>
+الرئيسية </a>
+</li>
+<li class>
+<a class href=card.html>
+الكروت </a>
+</li>
+<li class>
+<a class href=notifications.html>
+تنبيهات </a>
+</li>
+<li class>
+<a class href=About.html>
+حول</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="container pt-sm">
+<div class=row>
+<div class=col-md-12>
+<ul class=breadcrumb>
+<li><a href=login.html><i class="fa fa-home"></i> الرئيسية</a></li>
+<li class="active font-size-xs">خروج</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=container>
+<form class=form-horizontal name=login action=$(link-login-only) method=post background=#A03472 onload=getCookie()>
+<input type=hidden name=username />
+<input type=hidden name=password />
+<input type=hidden name=dst value=$(link-orig) />
+<input type=hidden name=popup value=true />
+<div class=form-group>
+<label for=inputEmail3>إسم المستخدم</label>
+<div class=col-sm-10>
+<input type=text class="form-control input-lg"autofocus id="uname" name="username" placeholder="$(username)" type="text" value="$(username)" size="15">
+</div>
+</div>
+<div class=form-group>
+<div class="col-sm-offset-2 col-sm-10">
+<div class=checkbox>
+<label>
+<input checked id=remember type=checkbox name=remember>الاحتفاظ بتسجيل الدخول
+</label>
+</div>
+</div>
+</div>
+<div class=form-group>
+<div class="col-sm-offset-2 col-sm-10">
+<input onclick='return rem()' class="btn btn-primary btn-lg" name=submit type=submit value="تسجيل الدخول" />
+$(if error)
+</div>
+</div>
+<div class="alert alert-warning">
+<strong>
+<script type=text/javascript>var error="$(error)";if(error=="simultaneous session limit reached"){document.write("المعذرة ، هذا الحساب مستخدم حالياً في جهاز آخر . ")}else{if(error=="invalid password"){document.write("تاكد من كتابة كلمة المرور بشكل صحيح")}else{if(error=="uptime limit reached"){document.write("عذراً لقد انتهى الوقت المتاح لك..")}else{if(error=="invalid username or password"){document.write("خطا في رمز الدخول تاكد من كتابته بشكل صحيح")}else{if(error.search("uptime limit")!=-1){document.write("لقد انتهى رصيد هذا الحساب")}else{if(error.search(" traffic limit")!=-1){document.write("لقد انتهى رصيد تحميل هذا الحساب")}else{if(error=="no valid profile found"){document.write("لفد انتهت صلاحية هذا الحساب .")}else{if(error=="transfer limit reached"){document.write("انتهى التحميل المحدد لهذا الحساب  .")}else{if(error.search("not found")!=-1){document.write("خطا في رمز الدخًـــول تاكد من كتابته بشكل صحيح")}else{if(error.search("no more sessions are allowed for user $(username)")!=-1){document.write("الكرت مستخدم حاليا في جهاز اخر")}else{if(error.search("traffic-limit")!=-1){document.write("انتهى التحميل المحدد للكرت")}else{if(error=="invalid Calling-Station-Id"){document.write("هذا الحساب مقترن بجهاز آخر، لمزيد من المعلومات يرجى الاتصال بخدمة العملاء")}else{document.write("$(error)<br />")}}}}}}}}}}}}</script>
+</strong>
+$(else)
+$(endif)
+</div>
+</form>
+</div>
+ 
+<div class=container>
+</div>
+<div class=footer-copyright>
+<h4 class=center>776063701</h4>
+<p class=center>Design ©
+<a target=_blank href=http://www.facebook.com/mohammedaljwfi>
+Mohammed Aljawfi
+</a></p>
+<ul class=social-icons>
+<li class=social-icons-facebook><a href=https://www.facebook.com/mohammedaljwfi/ target=_blank title=Facebook><i class="fa fa-facebook"></i></a></li>
+<li class=social-icons-whatsapp><a href="https://api.whatsapp.com/send?phone=967776063701" target=_blank title=whatsapp><i class="fa fa-whatsapp"></i></a></li>
+</ul>
+</div>
+ 
+</div>
+<script src=js/jquery/jquery.min.js></script>
+<script src=css/bootstrap/js/bootstrap.min.js></script>
+<script type=text/javascript>document.login.username.focus();</script>
+<script type=text/javascript>document.getElementById("timeLeft").innerHTML="$(session-time-left)".replace("w"," أسبوع , ").replace("d"," يوم , ").replace("h"," ساعة , ").replace("m"," دقيقة , ").replace("s"," ثانية");</script>
+<script type=text/javascript>document.getElementById("uptime").innerHTML="$(uptime)".replace("w"," أسبوع , ").replace("d"," يوم , ").replace("h"," ساعة , ").replace("m"," دقيقة , ").replace("s"," ثانية");</script>
+</body>
+</html>
